@@ -14,9 +14,11 @@
         <div>
             <h2>Welcome to Airbnb</h2>
             <form action="">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" value="Email">
+                <label for="email-1">Email</label>
+                <input type="email-1" name="email-1" id="email-1" value="Email" required>
                 <br>
+                <p>&#33</p>
+                <p>Email is required</p>
                 <a href="#">Continue</a>
                 <br>
             </form>
@@ -45,7 +47,25 @@
         </div>
         <div>
             <label for="fname">First name</label>
-            <input type="text" name="fname" id="fname">
+            <input type="text" name="fname" id="fname" required>
+            <p>Make sure it matches the name on your goverment ID.</p>
+            <label for="lname">Last name</label>
+            <input type="text" name="lname" id="lname" required>
+            <br>
+            <label for="bdate">Date of birth</label>
+            <input type="date" name="bdate" id="bdate" required>
+            <p>To sign up you need to be at least 18. Your birthday won't be shared with other people who use Airbnb</p>
+            <label for="email-2">Email</label>
+            <input type="email-2" name="email-2" id="email-2" value="Email" required>
+            <br>
+            <p>We'll email your trip confirmation and receipts</p>
+            <label for="pword">Password</label>
+            <input type="password" name="pword" id="pword" required>
+            <p>By clicking Agree and continue, I agree to Airbnb's <a href="#">Terms of Service</a>, <a href="#">Payments Terms of Service</a>, and <a href="#">Nondiscrimination Policy</a> and acknowledge the <a href="#">Privacy Policy</a>.</p>
+            <a href="#">Agree and continue</a>
+            <p>Airbnb will send your membership deals, inspiration, marketing email, and push notifications. You can opt out of receiving these at any time in your account settings or directly from the marketing notification.</p>
+            <input type="checkbox" name="checkbox" required>
+            <p>I don't want to receive marketing messages from Airbnb</p>
         </div>
     </div>
 </body>
