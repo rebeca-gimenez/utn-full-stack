@@ -3,38 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style-2.css">
     <title>Document</title>
 </head>
 <body>
-    <header></header>
+    <header> 
+        <a href="#"><img src="./assets/form-2-logo.png" alt="Kinsta logo"></a>
+        <a href="#">PLANS</a>
+        <a href="#">FEATURES</a>
+        <a href="#">CLIENTS</a>
+        <a href="#">CONTACT</a>
+        <a href="#"><img src="./assets/login-icon.png" alt="Login icon">LOGIN</a>
+        
+    </header>
     <main>
         <section>
+            <a href="#">←</a>
+            <h2>Princing or plans</h2>
             <form action="">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-                <br>
-                <label for="url">Website (optional)</label>
-                <input type="url" name="url" id="url">
-                <label for="cname">Company (optional)</label>
-                <input type="text" name="cname" id="cname">
-                <br>
-                <label for="job">Your job title (optional)</label>
-                <input type="text" name="job" id="job">
-                <br>
-                <label for="number">Number of websites (optional)</label>
-                <input type="number" name="number" id="number">
-                <label for="visits">Combined monthly website visits</label>
-                <input type="number" name="visits" id="visits">
-                <br>
-                <label for="message">Message</label>
-                <input type="text" name="message" id="message">
-                <input type="checkbox" name="checkbox" required><p>I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
-                <a href="">SEND MESSAGE</a>
+                <div>
+                    <label for="name" class="bold">Name</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email" class="bold">Email</label>
+                    <input type="email" name="email" id="email" required>    
+                </div>
+                <div>
+                    <label for="url"><span class="bold">Website</span> (optional)</label>
+                    <input type="url" name="url" id="url">
+                    <label for="cname"><span class="bold">Company</span> (optional)</label>
+                    <input type="text" name="cname" id="cname">
+                </div>
+                <div>
+                    <label for="job"><span class="bold">Your job title</span> (optional)</label>
+                    <input type="text" name="job" id="job">
+                </div>
+                <div>
+                    <label for="number"><span class="bold">Number of websites</span> (optional)</label>
+                    <input type="number" name="number" id="number">
+                    <label for="visits"><span class="bold">Combined monthly website visits</span> (optional)</label>
+                    <input type="number" name="visits" id="visits">
+                </div>
+                <div>
+                    <label for="message" class="bold">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <input type="checkbox" name="checkbox" required>
+                <p>I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+                <input type="submit" value="SEND MESSAGE">
             </form>
         </section>
-        <section></section>
+        <section>
+            <div><img src="./assets/email-icon.png" alt="Email logo"><a href="#">contact@kinsta.com</a></div>
+            <div><img src="./assets/twitter-icon.png" alt=""><a href="#">Twitter</a></div>
+            <div><img src="./assets/facebook-logo.png" alt=""><a href="#">Facebook</a></div>
+            <div><img src="./assets/linkedin-icon.png" alt=""><a href="#">LinkedIn</a></div>
+            <div><img src="./assets/instagram-logo.png" alt=""><a href="#">Instagram</a></div>
+            <h3>Already with Kinsta</h3>
+            <p>Chat with us in <a href="#">MyKinsta</a> and get an instant reply.</p>
+        </section>
+        <img src="./assets/form-2.png" alt="Homework form picture">
     </main>
 </body>
 </html>

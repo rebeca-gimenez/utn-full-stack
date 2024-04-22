@@ -1,0 +1,18 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+.green {
+    background-color: #e0e8d9ff;
+    border: solid 2px #a5aba1ff;
+}
+.note {
+    color: green;
+}
+.left {
+    color: #38761dff;
+}
+.box {
+    display: inline-block;
+}

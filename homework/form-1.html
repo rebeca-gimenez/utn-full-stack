@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style-1.css">
     <title>Document</title>
 </head>
 <body>
     <header><img src="./assets/form-1-logo.png" alt="Trees 4 Good logo"></header>
     <form action="">
         <div>
-            <label for="fname">First Name</label>
-            <input type="text" name="fname" id="fname" required>
+            <label for="fname" class="left">First Name</label>
+            <input type="text" name="fname" id="fname" required class="right green">
         </div>
         <div>
-            <label for="lname">Last Name</label>
-            <input type="text" name="lname" id="lname">
+            <label for="lname" class="left">Last Name</label>
+            <input type="text" name="lname" id="lname" class="right green">
         </div>
         <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
+            <label for="email" class="left">Email</label>
+            <input type="email" name="email" id="email" required class="right green">
         </div>
         <div>
-            <label for="address">Address</label>
-            <input type="text" name="address" id="address">
+            <label for="address" class="left">Address</label>
+            <input type="text" name="address" id="address" class="right green">
         </div>
         <div>
-            <label for="city">City</label>
-            <input type="text" name="city" id="city">
+            <label for="city" class="left">City</label>
+            <input type="text" name="city" id="city" class="right green">
         </div>
         <div>
-            <label for="country">Country</label>
+            <label for="country" class="left">Country</label>
             <!-- Country list from https://www.geograf.in/ -->
-            <select name="country" id="country">
+            <select name="country" id="country" class="right">
                 <option value="afg">Afghanistan</option>
                 <option value="alb">Albania</option>
                 <option value="dza">Algeria</option>
@@ -231,13 +232,13 @@
             </select>
         </div>
         <div>
-            <label for="zip">Zip</label>
-            <input type="text" name="zip" id="zip">
+            <label for="zip" class="left">Zip</label>
+            <input type="text" name="zip" id="zip" class="right green">
         </div>
         <div>
-            <label for="treeloc">Tree Location</label>
+            <label for="treeloc" class="left">Tree Location</label>
             <!-- Country list from https://www.geograf.in/ -->
-            <select name="treeloc" id="treeloc">
+            <select name="treeloc" id="treeloc" class="right">
                 <option value="af">Afghanistan</option>
                 <option value="al">Albania</option>
                 <option value="dz">Algeria</option>
@@ -437,28 +438,28 @@
             </select>
         </div>
         <div>
-            <label for="treenum">Number of Trees</label>
-            <input type="number" name="treenum" id="treenum" placeholder="1" min="1" max="100">
+            <label for="treenum" class="left">Number of Trees</label>
+            <input type="number" name="treenum" id="treenum" placeholder="1" min="1" max="100" class="right green">
         </div>
         <div>
-            <label for="buyer">Person/Org Making the Purchase</label>
-            <input type="text" name="buyer" id="buyer">
+            <label for="buyer" class="left">Person/Org Making the Purchase</label>
+            <input type="text" name="buyer" id="buyer" class="right green">
         </div>
         <div>
-            <label for="purpose">Purpose of the Trees</label>
-            <input type="text" name="purpose" id="purpose">
+            <label for="purpose" class="left">Purpose of the Trees</label>
+            <input type="text" name="purpose" id="purpose" class="right green">
         </div>
         <div>
-            <h2>Subtotal:</h2>
-            <p>$2.00</p>
+            <h2 class="left box">Subtotal:</h2>
+            <div class="right green box"><p>$2.00</p></div>
         </div>
         <div>
-            <h2>Total ($2 per tree + paypals 3.5%):</h2>
-            <p>$2.07</p>
+            <h2 class="left box">Total ($2 per tree + paypals 3.5%):</h2>
+            <div class="right green box"><p>$2.07</p></div>
         </div>
-        <p>NOTE FOR THE DEMO, PAYPAL HAS BEEN DISABLED ON THIS FORM. PLEASE CLICK THE PAYPAL BUTTON TO CONTINUE TO THE GENERATED PDF</p>
+        <p class="note">NOTE FOR THE DEMO, PAYPAL HAS BEEN DISABLED ON THIS FORM. PLEASE CLICK THE PAYPAL BUTTON TO CONTINUE TO THE GENERATED PDF</p>
         <input type="submit" value="Submit">
     </form>
-    <img src="./assets/form-1.jpg" alt="Original homework picture">
+    <img src="./assets/form-1.jpg" alt="Homework form picture">
 </body>
 </html>
