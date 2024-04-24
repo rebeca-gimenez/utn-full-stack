@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.card .card-palette {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    overflow: hidden;
+}
+.card .card-palette .color:nth-child(1) {
+    background-color: #ff76ce;
+    height: 35%;     /* 40% of the father height */
+    width: 100%;
+}
+
+.card .card-palette .color:nth-child(2) {
+    background-color: #fdffc2;
+    height: 30%;     /* 20% of the father height */
+    width: 100%;
+}
+
+.card .card-palette .color:nth-child(3) {
+    background-color: #94ffd8;
+    height: 20%;     /* 20% of the father height */
+    width: 100%;
+}
+
+.card .card-palette .color:nth-child(4) {
+    background-color: #a3d8ff;
+    height: 15%;     /* 10% of the father height */
+    width: 100%;
+}
+
+.card .card-controls {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.card .card-controls .btn-like {
+
+}
+.card .card-controls .time {
+
+}
+
+/* Card end */
+/* 
+#ff76ce
+#fdffc2
+#94ffd8
+#a3d8ff
+
+#f5dad2
+#fcffe0
+#bacd92
+#75a47f
+
+#1a4d2e
+#4f6f52
+#e8dfca
+#f5efe6
+
+#121481
+#ffeae3
+#ffcbcb
+#ffb1b1 */
