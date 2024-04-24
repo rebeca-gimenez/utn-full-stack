@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 * {
     padding: 0;
     margin: 0;
@@ -9,6 +12,7 @@
 .card {
     display: flex;
     flex-direction: column;
+    gap: 15px;
     width: 250px;
 }
 
@@ -20,27 +24,19 @@
     overflow: hidden;
 }
 .card .card-palette .color:nth-child(1) {
-    background-color: #ff76ce;
     height: 35%;     /* 40% of the father height */
-    width: 100%;
 }
 
 .card .card-palette .color:nth-child(2) {
-    background-color: #fdffc2;
     height: 30%;     /* 20% of the father height */
-    width: 100%;
 }
 
 .card .card-palette .color:nth-child(3) {
-    background-color: #94ffd8;
     height: 20%;     /* 20% of the father height */
-    width: 100%;
 }
 
 .card .card-palette .color:nth-child(4) {
-    background-color: #a3d8ff;
     height: 15%;     /* 10% of the father height */
-    width: 100%;
 }
 
 .card .card-controls {
@@ -49,9 +45,21 @@
     justify-content: space-between;
 }
 .card .card-controls .btn-like {
+    align-items: center;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    font-size: 16px;
+    gap: 5px;
+    height: 38px;
+    justify-content: center;
+    padding: 0 14px;
 
 }
 .card .card-controls .time {
+    color: #000000E6;
+    font-size: 14px;
 
 }
 
