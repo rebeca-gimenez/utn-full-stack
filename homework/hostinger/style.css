@@ -101,18 +101,22 @@ header a:hover {
 
 /* Client Review Cards */
 
-.sec-reviews {
+.reviews {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 40px;
 }
-.reviews {
+
+.reviews a {
+    color: var(--hostinger-purple);
+}
+.reviews .review-cards {
     display: flex;
     justify-content: center;
     gap: 25px;
-    margin: 40px 0 40px 0;
 }
-.reviews .rev-card {
+.reviews .review-cards .rev-card {
     border: 1px solid var(--hostinger-purple-border);
     border-radius: 5px;
     color: var(--hostinger-purple-dark);
@@ -123,7 +127,7 @@ header a:hover {
     width: 360px;
 }
 
-.reviews .rev-card .card-cont {
+.reviews .review-cards .rev-card .card-cont {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -132,30 +136,26 @@ header a:hover {
     padding: 0 30px;
 }
 
-.reviews .rev-card .card-cont .cont-stars {
+.reviews .review-cards .rev-card .card-cont .cont-stars {
     color: var(--hostinger-purple);
     font-size: 22px;
 }
 
-.reviews .rev-card .card-text {
+.reviews .review-cards .rev-card .card-text {
     font-size: 14px;
     /* height: 125px; */
     line-height: 24px;
 }
 
-.reviews .rev-card .card-cont .card-text {
+.reviews .review-cards .rev-card .card-cont .card-text {
     height: 140px;   
 }
 
-.reviews .rev-card .card-cont .cont-link {
-    color: var(--hostinger-purple);
-}
-
-.reviews .rev-card .card-cont .cont-link:hover {
+.reviews .review-cards .rev-card .card-cont .cont-link:hover {
     color: #5025d1;
 }
 
-.reviews .rev-card .card-author {
+.reviews .review-cards .rev-card .card-author {
     align-items: center;
     border-top: 1px solid var(--hostinger-purple-border);
     background-color: var(--hostinger-purple-light);
@@ -165,18 +165,22 @@ header a:hover {
     padding: 0 30px;
 }
 
-.reviews .rev-card .card-author .author-photo {
+.reviews .review-cards .rev-card .card-author .author-photo {
     background-color: var(--hostinger-purple);
     border-radius: 30px;
     height: 60px;
     width: 60px;
 }
 
-.rev-more-btn {
+.reviews .review-btn {
     border: 2px solid var(--hostinger-purple);
     border-radius: 10px;
     height: 48px;
     text-align: center;
-    padding: 4px 0 40px 0;
+    padding: 12px;
     width: 325px;
+}
+
+.reviews .review-btn:hover {
+    background-color: #EBE4FF;
 }
