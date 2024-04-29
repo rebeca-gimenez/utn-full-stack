@@ -41,6 +41,10 @@ header {
     font-size: 16px;
     padding: 5px 50px 5px 50px;
     height: 89px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
 }
 
 a {
