@@ -24,7 +24,8 @@ h3 {
 header {
     align-items: center;
     box-shadow: 0 4px 15px 1px rgba( 0, 0, 0, 0.1);
-    display: flex;
+    /* display:flex */
+    display: none;
     justify-content: space-between;
     font-size: 16px;
     padding: 5px 50px 5px 50px;
@@ -91,6 +92,17 @@ header a:hover {
     width: 100px;
 }
 
+/* Security section */
+.dark {
+    background-color: var(--h-purple);
+}
+.content-box{}
+.content-box .content {
+
+}
+.content-box .picture {
+    widt
+}
 /* Client Review Cards */
 
 .reviews {
@@ -175,20 +187,4 @@ header a:hover {
 
 .reviews .review-btn:hover {
     background-color: #EBE4FF;
-}
-
-@media screen and (min-width: 320px) {
-
-}
-
-@media screen and (min-width: 650px) {
-    
-}
-
-@media screen and (min-width: 1050px) {
-    
-}
-
-@media screen and (min-width: 1600px) {
-    
 }

@@ -1,0 +1,11 @@
+html {
+    font-size: 16px;
+}
+
+* {
+    font-family: var(--h-main-font);
+}
+
+.dark {
+    color: var(--h-white);
+}
