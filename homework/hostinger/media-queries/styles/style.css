@@ -88,6 +88,7 @@ header a:hover {
     display: flex;
     flex-direction: column;
     max-width: 320px;
+    padding: 60px 15px 85px 15px;
 }
 .box h2 {
     padding: 0 0 5px 0;
@@ -114,7 +115,6 @@ header a:hover {
 .box .content-box {
     display: flex;
     flex-direction: column;
-    padding: 60px 15px 20px 15px;
 }
 
 .box .content-box .content {}
@@ -128,12 +128,41 @@ header a:hover {
 .box .cards-box {
     display: flex;
     flex-direction: column;
-}
-.box .cards-box .card{
-    border: 1px solid black;
-    height: 30px;
+    align-items: center;
+    gap: 40px;
 }
 
+.box .cards-box .darker{
+    background-color: var(--h-purple-medium);
+}
+.box .cards-box .card{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 33px;
+    width: 100%;
+}
+
+.review {
+    border: 1px solid var(--h-purple-light-1);
+}
+.box .cards-box .card .card-title {
+    height: 31px;
+}
+.box .cards-box .card .card-title img{
+    height: 100%;
+}
+.box .cards-box .card .card-content {}
+
+.box .cards-box .card .card-link {
+    height: 20px;
+    text-align: left;
+}
+.box .cards-box .card .card-link i{
+    position: relative;
+    left: 200px;
+}
 /* Client Review Cards */
 
 .reviews {
@@ -218,4 +247,20 @@ header a:hover {
 
 .reviews .review-btn:hover {
     background-color: #EBE4FF;
+}
+
+@media screen and (min-width: 320px ) {
+    
+}
+
+@media screen and (min-width: 650px ) {
+    
+}
+
+@media screen and (min-width: 1050px ) {
+    
+}
+
+@media screen and (min-width: 1600px ) {
+    
 }

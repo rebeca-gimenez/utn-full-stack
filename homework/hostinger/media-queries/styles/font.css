@@ -10,11 +10,14 @@ html {
     color: var(--h-white);
 }
 
+.dark a{
+    color: var(--h-white);
+}
+
 h2 {
     font-size: 1.5rem;
     color: var(--hostinger-purple-dark);
     text-align: center;
-    padding: 4px 0 0 0;
 }
 
 .box h2 {
@@ -24,4 +27,13 @@ h2 {
 /* FOR REVIEWSletter-spacing: 1px; */
 h3 {
     font-size: 18px;
+}
+
+.box .cards-box {
+    line-height: 1.5rem;
+}
+
+.rev-text {
+    font-size: .9rem;
+    color: var(--h-purple-dark);
 }
