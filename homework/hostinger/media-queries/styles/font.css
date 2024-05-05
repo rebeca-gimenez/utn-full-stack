@@ -10,7 +10,6 @@ a {
 }
 h2 {
     font-size: 1.5rem;
-    text-align: center;
 }
 /* 'Special' Styles */
 .bold {
@@ -43,11 +42,22 @@ h2 {
     text-align: center;
 }
 .box h3 {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
 }
 .box .cards-box {
     line-height: 1.5rem;
 }
 .box .cards-box .review-card .rev-text {
-    font-size: 0.85rem;
+    font-size: 0.875rem;
+}
+
+@media screen and (min-width: 768px ) {
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+@media screen and (min-width: 1025px ) {
+    h2 {
+        font-size: 2.25rem;
+    }
 }
