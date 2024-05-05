@@ -127,9 +127,11 @@ header a:hover {
 }
 .box .cards-box .card.darker{
     background-color: var(--h-purple-medium);
+    align-items: flex-end;
 }
 .box .cards-box .card .card-title {
     height: 31px;
+    width: 100%;
 }
 .box .cards-box .card .card-title img{
     height: 100%;
@@ -138,11 +140,6 @@ header a:hover {
     display: flex;
     height: 20px;
     justify-content: space-between;
-    text-align: left;
-}
-.box .cards-box .card .card-link.arrow i{
-    position: relative;
-    left: 200px;
 }
 .box .center {
     padding-bottom: 30px;
@@ -182,6 +179,9 @@ header a:hover {
 }
 
 @media screen and (min-width: 320px ) {
+    .box {
+        max-width: 650px;
+    } 
     
 }
 
