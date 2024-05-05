@@ -2,12 +2,13 @@
 :root {
     /* Hostinger color palette */
     --text-color: #1D1E20;
-    --h-purple-dark: #2F1C6A; /* H2, H3, some text */
+    --h-purple-dark: #2F1C6A; /* H2, H3, some text*/
     --h-purple-medium: #5025D1;
     --h-purple: #673DE6;
     --h-purple-light-1: #D5DFFF; /* Reviews box border color */
     --h-purple-light-2: #EBE4FF; /* Button in hero */
-    --h-purple-light3: #F4F5FF;  /* Reviews author info box */
+    --h-purple-light-3: #F4F5FF;  /* Reviews author info box */
+    --h-card-background: #FAFBFF;
     --h-green: #00B090;
     --h-white: #ffffff;
     /* Hostinger text font */

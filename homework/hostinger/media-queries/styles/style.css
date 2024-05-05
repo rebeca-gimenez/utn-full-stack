@@ -3,14 +3,7 @@
 @import url('./variables.css');
 @import url('./font.css');
 
-
-
-
-
-.bold {
-    font-weight: 800;
-}
-
+/* Center REV Circle Alejandro Gonzalez (third child) */
 header {
     align-items: center;
     box-shadow: 0 4px 15px 1px rgba( 0, 0, 0, 0.1);
@@ -33,7 +26,6 @@ a {
 header a {
     color: var(--text-color);
 }
-
 header a:hover {
     color: #606162;
 }
@@ -43,12 +35,10 @@ header a:hover {
     display: flex;
     gap: 28px;
 }
-
 .logo-lang .logo {
     width: 147px;
     /* height: 38px; */
 }
-
 .logo-lang .lang {
     display: flex;
     gap: 5px;
@@ -62,7 +52,6 @@ header a:hover {
     display: flex;
     justify-content: flex-end;    
 }
-
 .nav .nav-menu {
     align-items: center;
     display: flex;
@@ -71,7 +60,6 @@ header a:hover {
     list-style-type: none;
     padding: 0 20px 0 0;
 }
-
 .nav .nav-cta {
     align-items: center;
     border: 2px solid #1D1E20;
@@ -81,9 +69,11 @@ header a:hover {
     height: 48px;
     width: 100px;
 }
+
 .dark {
     background-color: var(--h-purple);
 }
+/* Box Styling */
 .box {
     display: flex;
     flex-direction: column;
@@ -95,7 +85,6 @@ header a:hover {
 }
 .box ul {
     list-style: None;
-
 }
 .box ul li:before {
     font-family: 'Bootstrap-icons';
@@ -106,24 +95,20 @@ header a:hover {
     position: relative;
     left: 5px;
 }
-
 .box li {
     line-height: 1.5rem;
     margin: 15px 5px 0px 15px;
 }
-
 .box .content-box {
     display: flex;
     flex-direction: column;
 }
-
-.box .content-box .content {}
-
 .box .content-box .picture {
     width: 100%;
 }
 .box .content-box .picture img{
     width: inherit;
+    padding: 22px 0;
 }
 .box .cards-box {
     display: flex;
@@ -131,11 +116,8 @@ header a:hover {
     align-items: center;
     gap: 40px;
 }
-
-.box .cards-box .darker{
-    background-color: var(--h-purple-medium);
-}
 .box .cards-box .card{
+    background-color: var(--h-card-background);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -143,9 +125,8 @@ header a:hover {
     padding: 33px;
     width: 100%;
 }
-
-.review {
-    border: 1px solid var(--h-purple-light-1);
+.box .cards-box .card.darker{
+    background-color: var(--h-purple-medium);
 }
 .box .cards-box .card .card-title {
     height: 31px;
@@ -153,100 +134,51 @@ header a:hover {
 .box .cards-box .card .card-title img{
     height: 100%;
 }
-.box .cards-box .card .card-content {}
-
 .box .cards-box .card .card-link {
+    display: flex;
     height: 20px;
+    justify-content: space-between;
     text-align: left;
 }
-.box .cards-box .card .card-link i{
+.box .cards-box .card .card-link.arrow i{
     position: relative;
     left: 200px;
 }
-/* Client Review Cards */
-
-.reviews {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+.box .center {
+    padding-bottom: 30px;
 }
-
-.reviews a {
-    color: var(--hostinger-purple);
+.box.review .cards-box {
+    gap: 15px;
 }
-.reviews .review-cards {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
-.reviews .review-cards .rev-card {
-    border: 1px solid var(--hostinger-purple-border);
+.box .cards-box .review-card {
+    border: 1px solid var(--h-purple-light-1);
     border-radius: 5px;
-    color: var(--hostinger-purple-dark);
-    display: flex;
-    flex-direction: column;
-    /* height: 450px; */
     overflow: hidden;
-    width: 360px;
 }
-
-.reviews .review-cards .rev-card .card-cont {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    height: 340px;
-    justify-content: center;
-    padding: 0 30px;
+.box .cards-box .review-card .card{
+    background-color: var(--h-white);
+    border: 0;
+    border-radius: 0;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 52px;
 }
-
-.reviews .review-cards .rev-card .card-cont .cont-stars {
-    color: var(--hostinger-purple);
-    font-size: 22px;
-}
-
-.reviews .review-cards .rev-card .card-text {
-    font-size: 14px;
-    /* height: 125px; */
-    line-height: 24px;
-}
-
-.reviews .review-cards .rev-card .card-cont .card-text {
-    height: 140px;   
-}
-
-.reviews .review-cards .rev-card .card-cont .cont-link:hover {
-    color: #5025d1;
-}
-
-.reviews .review-cards .rev-card .card-author {
+.box .cards-box .review-card .card-author {
     align-items: center;
-    border-top: 1px solid var(--hostinger-purple-border);
-    background-color: var(--hostinger-purple-light);
+    border-top: 1px solid var(--h-purple-light-1);
+    background-color: var(--h-purple-light-3);
     display: flex;
     gap: 10px;
-    height: 113px;
-    padding: 0 30px;
+    padding: 25px 30px;
 }
-
-.reviews .review-cards .rev-card .card-author .author-photo {
-    background-color: var(--hostinger-purple);
+.box .cards-box .review-card .card-author .author-photo {
+    background-color: var(--h-purple);
     border-radius: 30px;
     height: 60px;
     width: 60px;
 }
-
-.reviews .review-btn {
-    border: 2px solid var(--hostinger-purple);
-    border-radius: 10px;
-    height: 48px;
-    text-align: center;
-    padding: 12px;
-    width: 325px;
-}
-
-.reviews .review-btn:hover {
-    background-color: #EBE4FF;
+.box .cards-box .review-card .card-author .author-info {
+    max-width: 145px;
 }
 
 @media screen and (min-width: 320px ) {

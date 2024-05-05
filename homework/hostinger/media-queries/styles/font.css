@@ -2,38 +2,52 @@ html {
     font-size: 16px;
 }
 
-* {
-    font-family: var(--h-main-font);
+main {
+    color: var(--h-purple-dark);
 }
-
-.dark {
-    color: var(--h-white);
+a {
+    color: var(--h-purple);
 }
-
-.dark a{
-    color: var(--h-white);
-}
-
 h2 {
     font-size: 1.5rem;
-    color: var(--hostinger-purple-dark);
     text-align: center;
 }
+/* 'Special' Styles */
+.bold {
+    font-weight: 800;
+}
+.stars {
+    color: var(--h-purple);
+}
+.stars.green {
+    color: var(--h-green);
+}
 
+/* Box fonts */
+.box.dark {
+    color: var(--h-white);
+}
+.box.dark a{
+    color: var(--h-white);
+}
+.box.dark .cards-box .card.darker {
+    color: var(--h-white);
+}
+.box .stars {
+    font-size: 1.3rem;
+}
 .box h2 {
     text-align: left;
 }
-
-/* FOR REVIEWSletter-spacing: 1px; */
-h3 {
-    font-size: 18px;
+.box .center {
+    text-align: center;
 }
-
+.box h3 {
+    font-size: 1.1rem;
+}
 .box .cards-box {
     line-height: 1.5rem;
 }
-
-.rev-text {
-    font-size: .9rem;
-    color: var(--h-purple-dark);
+.box .cards-box .review-card .rev-text {
+    font-size: 0.85rem;
 }
