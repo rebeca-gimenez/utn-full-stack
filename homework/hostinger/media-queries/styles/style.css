@@ -85,23 +85,17 @@ header a:hover {
     padding-bottom: 64px;
 }
 .box h2 {
-    padding: 0 0 8px 0;
+    padding: 0 0 24px 0;
 }
 .box ul {
-    list-style: None;
-}
-.box ul li:before {
-    font-family: 'Bootstrap-icons';
-    content:"\F633";
-    margin-left: -17px;
-}
-.box li span {
-    position: relative;
-    left: 5px;
+    list-style-type: None;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 .box li {
-    line-height: 1.5rem;
-    margin: 15px 5px 0px 15px;
+    display: flex;
+    gap: 5px;
 }
 .box .content-box {
     display: flex;
@@ -110,15 +104,17 @@ header a:hover {
 }
 .box .content-box .picture {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 22px 0;
 }
 .box .content-box .picture img{
-    width: inherit;
-    padding: 22px 0;
+    width: 100%;
 }
 .box .cards-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 40px;
 }
 .box .cards-box .card{
@@ -126,26 +122,25 @@ header a:hover {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 15px;
     padding: 32px;
-    width: 100%;
 }
 .box .cards-box .card.darker{
     background-color: var(--h-purple-medium);
-    align-items: flex-end;
 }
 .box .cards-box .card .card-title {
-    height: 31px;
-    width: 100%;
-}
-.box .cards-box .card .card-title img{
-    height: 100%;
+    width: 205px;
 }
 .box .cards-box .card .card-link {
     display: flex;
     height: 20px;
     justify-content: space-between;
 }
+.box.dark .cards-box .card .card-link {
+    justify-content: end;
+}
+
 .box .center {
     padding-bottom: 30px;
 }
@@ -155,12 +150,12 @@ header a:hover {
 .box .cards-box .review-card {
     border: 1px solid var(--h-purple-light-1);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
 }
 .box .cards-box .review-card .card{
     background-color: var(--h-white);
-    border: 0;
-    border-radius: 0;
     gap: 20px;
     padding-top: 50px;
     padding-bottom: 52px;
@@ -180,7 +175,7 @@ header a:hover {
     width: 60px;
 }
 .box .cards-box .review-card .card-author .author-info {
-    max-width: 48%;
+    max-width: 70%;
 }
 
 @media screen and (min-width: 320px ) {
@@ -191,7 +186,6 @@ header a:hover {
         max-width: 510px;
     }
 }
-
 @media screen and (min-width: 768px ) {
     .box {
         padding: 40px;
@@ -201,44 +195,44 @@ header a:hover {
     }
     .box .cards-box {
         max-width: 750px;
-        padding: 48px 32px;
-    }
-    
+    }   
 }
 @media screen and (min-width: 1025px ) {
-    .box {
-        padding-top: 48px;
-        padding-bottom: 48px;
-    }
-    .box.dark {
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }
     .box .content-box {
         flex-direction: row-reverse;
         justify-content: space-between;
-    }
-    .box .content-box .picture {
-        width: 100%;
+        max-width: 1025px
     }
     .box .cards-box {
         flex-direction: row;
         justify-content: center;
-        gap: 20px;
+        gap: 30px;
+        max-width: None;
+        width: 100%;
     }
-    .box .cards-box .review-card{
-        max-width: 300px;
+    .box .cards-box .card, .box .cards-box .review-card{
+        width: 30%;
     }
-    .box.dark {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    .box.review .cards-box {
+        gap: 30px;
+    }
+    .box .cards-box .review-card .card{
+        width: 100%;
+        height: 100%;
+    }
+    .box .cards-box .review-card .card-author {
+        padding: 0px 30px;
+        height: 170px;
+    }
+    .box .cards-box .review-card .card-content.rev-text {
+        height: 60%;
+    }
 }
-    
-}
-@media screen and (min-width: 1050px ) {
-    
-}
-
-@media screen and (min-width: 1600px ) {
-    
+@media screen and (min-width: 1200px){
+    .box .content-box {
+        max-width: 1200px;
+    }
+    .box .cards-box {
+        max-width: 1200px;
+    }   
 }
