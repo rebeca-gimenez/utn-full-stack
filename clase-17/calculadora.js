@@ -130,10 +130,18 @@ elementoHistorial =  {
     resultado: -1
 }
 function agregarAlHistorial(elementoHistorial) {
+    const historial = obtenerHistorial()
     historial.push(elementoHistorial)
+    localStorage.setItem('historial',JSON.stringify(historial))
 }
 function obtenerHistorial() {
-    return historial
+    const historialStr = localStorage.getItem('historial')
+    const historialArray = JSON.parse(historialStr)
+    return historialArray
+}
+if (obtenerHistorial()==null){
+    localStorage.setItem('historial',JSON.stringify([]))
 }
 agregarAlHistorial(elementoHistorial)
 console.log(obtenerHistorial())
+alert(JSON.stringify(historial))
