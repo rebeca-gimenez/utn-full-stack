@@ -90,47 +90,50 @@ function calculadora() {
     let resultado = ejecutarOperacion(operacion, numero1, numero2)
     alert('El resultado de ' + numero1 + operacion + numero2 + ' es ' + resultado)
 }
-calculadora()
+//calculadora()
 
-//Solicita una operacion
-//Es valida si es una de las operaciones validas
-// Si es valida, solicitar nro 1.
-// Validar que sea un numero
-// Solicitar, nro 2
-//En caso de elegir una '+'
-//'el resultado de {numero1} {operacion} {numero 2} es {resultado}
-//En caso de elegir una '-'
-/*
-let usuarios = [
+let historial = [
     {
-        email: 'email',
-        historial: [],
-    }
+        accion: 'CALCULAR',
+        operacion: '+',
+        a: 1,
+        b: 2,
+        resultado: 2 
+    },
+    {
+        accion: 'CALCULAR',
+        operacion: '+',
+        a: 1,
+        b: 2,
+        resultado: 2 
+    },
 ]
-function agregarUsuarioAUsuarios (email) {
-    usuarios.find(function (usuario){
-        return usuario.email === email;
-    })
-    //Si el registro no contiene el email, agregarlo
-    //Si el registro ya tiene el email, no hacer nada
+
+function renderizarHistorial(historial) {
+    let renderizado = "";
+    for (const calculo of historial) {
+        renderizado += `
+        Accion: ${calculo.accion}
+        Operacion: ${calculo.operacion}
+        Numeros: ${calculo.a}, ${calculo.b}
+        Resultado: ${calculo.resultado}
+        `;
+    }
+    return renderizado;
 }
 
-/*
-// Calculadora
-//
-function operacion() {
-    let num1 = prompt("Ingresar el primer numero", 1);
-    let num2 = prompt("Ingresar el segundo numero", 1);
-    let operacion = prompt("Selecciona la operacion: '+' o '-'", '+');
+elementoHistorial =  {
+    accion: 'CALCULAR',
+    operacion: '-',
+    a: 1,
+    b: 2,
+    resultado: -1
 }
-
-
-const usuario = undefined
-const historial = []
-function crearUsuario() {
-
+function agregarAlHistorial(elementoHistorial) {
+    historial.push(elementoHistorial)
 }
-function llenarHistorial() {
-
+function obtenerHistorial() {
+    return historial
 }
-*/
+agregarAlHistorial(elementoHistorial)
+console.log(obtenerHistorial())
